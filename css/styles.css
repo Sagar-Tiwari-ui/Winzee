@@ -392,14 +392,6 @@ a:hover {
     margin-right: var(--spacing-sm);
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 /* Navigation Menu */
 .nav-menu {
@@ -703,11 +695,7 @@ a:hover {
     line-height: 1.1;
 }
 
-.hero-title span {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .hero-subtitle {
     font-size: 1.25rem;
