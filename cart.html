@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping Cart - Winzee Household Cleaners">
+    <meta name="keywords" content="shopping cart, checkout, Winzee products">
+    
+    <!-- Page Title -->
+    <title>Shopping Cart - Winzee</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Header Section (Same as index.html) -->
+    <header class="header" id="header">
+        <!-- Top Bar with Contact Info and Social Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                        <span><i class="fas fa-envelope"></i> support@winzee.com</span>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Winzee Logo">
+                            <span class="logo-text">Winzee</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        
+                        <!-- Products Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                                <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                                <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                                <li><a href="glass-cleaners.html">Glass Cleaners</a></li>
+                                <li><a href="all-purpose-cleaners.html">All-Purpose Cleaners</a></li>
+                                <li><a href="specialty-cleaners.html">Specialty Cleaners</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Right Side Icons -->
+                    <div class="nav-icons">
+                        <!-- Search Icon -->
+                        <button class="icon-btn search-btn" id="searchBtn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- User Account -->
+                        <a href="account.html" class="icon-btn" aria-label="User Account">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        
+                        <!-- Shopping Cart -->
+                        <a href="cart.html" class="icon-btn cart-btn active" aria-label="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <form action="search.html" method="GET">
+                    <input type="search" name="q" placeholder="Search for products..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="close-search" id="closeSearch">&times;</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            
+            <!-- Cart Content -->
+            <div class="cart-content" id="cartContent">
+                <!-- If cart is empty -->
+                <div class="empty-cart" id="emptyCart" style="display: none;">
+                    <div class="empty-cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added any products to your cart yet.</p>
+                    <a href="index.html" class="btn btn-primary">Start Shopping</a>
+                </div>
+                
+                <!-- If cart has items -->
+                <div class="cart-items-wrapper" id="cartItemsWrapper">
+                    <div class="cart-items">
+                        <!-- Cart Table for Desktop -->
+                        <div class="cart-table-wrapper">
+                            <table class="cart-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cartTableBody">
+                                    <!-- Cart items will be dynamically inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Cart Items for Mobile -->
+                        <div class="cart-items-mobile" id="cartItemsMobile">
+                            <!-- Mobile cart items will be dynamically inserted here -->
+                        </div>
+                        
+                        <!-- Cart Actions -->
+                        <div class="cart-actions">
+                            <a href="index.html" class="btn btn-outline">
+                                <i class="fas fa-arrow-left"></i> Continue Shopping
+                            </a>
+                            <button class="btn btn-outline" id="clearCart">
+                                <i class="fas fa-trash"></i> Clear Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        
+                        <!-- Coupon Code -->
+                        <div class="coupon-section">
+                            <form id="couponForm">
+                                <input type="text" placeholder="Enter coupon code" id="couponCode">
+                                <button type="submit" class="btn btn-outline">Apply</button>
+                            </form>
+                            <div class="coupon-message" id="couponMessage"></div>
+                        </div>
+                        
+                        <!-- Summary Details -->
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="cartSubtotal">₹0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount</span>
+                                <span class="text-success" id="cartDiscount">-₹0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="shippingCost">₹0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax (GST 18%)</span>
+                                <span id="cartTax">₹0.00</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row summary-total">
+                                <span>Total</span>
+                                <span id="cartTotal">₹0.00</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Shipping Message -->
+                        <div class="shipping-message" id="shippingMessage">
+                            <i class="fas fa-truck"></i>
+                            <span></span>
+                        </div>
+                        
+                        <!-- Checkout Button -->
+                        <button class="btn btn-primary btn-block" id="checkoutBtn">
+                            Proceed to Checkout
+                        </button>
+                        
+                        <!-- Security Icons -->
+                        <div class="security-icons">
+                            <img src="images/secure-payment.png" alt="Secure Payment">
+                            <img src="images/ssl-certificate.png" alt="SSL Certificate">
+                        </div>
+                        
+                        <!-- Benefits -->
+                        <div class="cart-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>100% Secure Checkout</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30-Day Return Policy</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 Customer Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Recently Viewed Products -->
+    <section class="recently-viewed-section">
+        <div class="container">
+            <h2 class="section-title">Recently Viewed</h2>
+            <div class="products-grid" id="recentlyViewed">
+                <!-- Recently viewed products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Recommended Products -->
+    <section class="recommended-section">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="products-grid" id="recommendedProducts">
+                <!-- Recommended products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.png" alt="Winzee">
+                    </div>
+                    <p>Making homes cleaner and healthier with eco-friendly cleaning solutions since 2020.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="blog.html">Cleaning Tips Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press & Media</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Product Categories -->
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                        <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                        <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                        <li><a href="glass-cleaners.html">Glass Cleaners</a></li>
+                        <li><a href="laundry-products.html">Laundry Products</a></li>
+                        <li><a href="all-products.html">View All Products</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping & Delivery</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="track-order.html">Track Your Order</a></li>
+                        <li><a href="wholesale.html">Wholesale Inquiries</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Clean Street, Suite 100<br>San Francisco, CA 94105</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@winzee.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-6PM PST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>&copy; 2024 Winzee. All rights reserved.</p>
+                    </div>
+                    
+                    <!-- Footer Bottom Links -->
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-conditions.html">Terms & Conditions</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                    
+                                        <!-- Payment Methods -->
+                    <div class="payment-methods">
+                        <img src="images/payment-visa.png" alt="Visa">
+                        <img src="images/payment-mastercard.png" alt="Mastercard">
+                        <img src="images/payment-amex.png" alt="American Express">
+                        <img src="images/payment-paypal.png" alt="PayPal">
+                        <img src="images/payment-apple-pay.png" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="liveChatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Live Chat">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification">1</span>
+        </button>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="modal" id="deleteModal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Remove Item</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to remove this item from your cart?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-modal-close>Cancel</button>
+                <button class="btn btn-primary" id="confirmDelete">Remove</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Clear Cart Confirmation Modal -->
+    <div class="modal" id="clearCartModal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Clear Cart</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to remove all items from your cart?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" data-modal-close>Cancel</button>
+                <button class="btn btn-primary" id="confirmClearCart">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    
+    <!-- Additional CSS for Cart Page -->
+    <style>
+        /* Breadcrumb Section */
+        .breadcrumb-section {
+            background: var(--bg-light);
+            padding: var(--spacing-md) 0;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 0.875rem;
+        }
+        
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: '/';
+            margin: 0 var(--spacing-sm);
+            color: var(--text-light);
+        }
+        
+        .breadcrumb-item a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item a:hover {
+            color: var(--primary-color);
+        }
+        
+        .breadcrumb-item.active {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        /* Cart Section */
+        .cart-section {
+            padding: var(--spacing-2xl) 0;
+            min-height: 60vh;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-xl);
+            text-align: center;
+        }
+        
+        /* Empty Cart */
+        .empty-cart {
+            text-align: center;
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .empty-cart-icon {
+            font-size: 6rem;
+            color: var(--text-light);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .empty-cart h2 {
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .empty-cart p {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* Cart Content */
+        .cart-content {
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+        
+        .cart-items-wrapper {
+            flex: 1;
+        }
+        
+        /* Cart Table */
+        .cart-table-wrapper {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .cart-table th {
+            background: var(--bg-light);
+            padding: var(--spacing-md);
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .cart-table td {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .cart-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Cart Item */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .cart-item-image {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .cart-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .cart-item-details h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+            color: var(--text-dark);
+        }
+        
+        .cart-item-details p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* Quantity Selector */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .quantity-control button {
+            background: var(--bg-light);
+            border: none;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            color: var(--text-dark);
+            transition: all var(--transition-fast);
+        }
+        
+        .quantity-control button:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+        
+        .quantity-control input {
+            width: 50px;
+            height: 36px;
+            text-align: center;
+            border: none;
+            font-weight: 500;
+        }
+        
+        /* Cart Item Price */
+        .cart-item-price {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        /* Remove Button */
+        .remove-item {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+            font-size: 1.25rem;
+            padding: var(--spacing-xs);
+            transition: all var(--transition-fast);
+        }
+        
+        .remove-item:hover {
+            color: var(--error-color);
+        }
+        
+        /* Cart Actions */
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        /* Cart Summary */
+        .cart-summary {
+            width: 350px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .cart-summary h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        /* Coupon Section */
+        .coupon-section {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .coupon-section form {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+        
+        .coupon-section input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
+        }
+        
+        .coupon-section button {
+            padding: 10px 20px;
+            font-size: 0.875rem;
+        }
+        
+        .coupon-message {
+            margin-top: var(--spacing-xs);
+            font-size: 0.875rem;
+        }
+        
+        .coupon-message.success {
+            color: var(--success-color);
+        }
+        
+        .coupon-message.error {
+            color: var(--error-color);
+        }
+        
+        /* Summary Details */
+        .summary-details {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.875rem;
+        }
+        
+        .summary-row span:first-child {
+            color: var(--text-light);
+        }
+        
+        .summary-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .summary-total {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        /* Shipping Message */
+        .shipping-message {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .shipping-message.free-shipping {
+            background: var(--success-color);
+            color: var(--text-white);
+        }
+        
+        /* Checkout Button */
+        .btn-block {
+            width: 100%;
+            padding: var(--spacing-md);
+            font-size: 1.125rem;
+        }
+        
+        /* Security Icons */
+        .security-icons {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .security-icons img {
+            height: 30px;
+            opacity: 0.7;
+        }
+        
+        /* Cart Benefits */
+        .cart-benefits {
+            margin-top: var(--spacing-lg);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+        
+        .benefit-item i {
+            color: var(--success-color);
+        }
+        
+        /* Mobile Cart Items */
+        .cart-items-mobile {
+            display: none;
+        }
+        
+        /* Recently Viewed & Recommended Sections */
+        .recently-viewed-section,
+        .recommended-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--bg-light);
+        }
+        
+        .recently-viewed-section .section-title,
+        .recommended-section .section-title {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* Modal Styles */
+        .modal-small .modal-content {
+            max-width: 400px;
+            padding: var(--spacing-lg);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+        }
+        
+        .modal-body {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: var(--spacing-sm);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .cart-content {
+                flex-direction: column;
+            }
+            
+            .cart-summary {
+                width: 100%;
+                position: static;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .cart-table-wrapper {
+                display: none;
+            }
+            
+            .cart-items-mobile {
+                display: block;
+            }
+            
+            .cart-item-mobile {
+                background: var(--bg-white);
+                border-radius: var(--radius-md);
+                padding: var(--spacing-md);
+                margin-bottom: var(--spacing-md);
+                box-shadow: var(--shadow-sm);
+            }
+            
+            .cart-item-mobile-header {
+                display: flex;
+                gap: var(--spacing-md);
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .cart-item-mobile-details {
+                flex: 1;
+            }
+            
+            .cart-item-mobile-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: var(--spacing-md);
+                border-top: 1px solid var(--border-color);
+            }
+            
+            .cart-actions {
+                flex-direction: column;
+            }
+            
+            .cart-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>

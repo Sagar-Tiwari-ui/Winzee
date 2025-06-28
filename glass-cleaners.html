@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Glass & Window Cleaners by Winzee - Streak-free shine for mirrors, windows, and glass surfaces. Eco-friendly and ammonia-free formulas.">
+    <meta name="keywords" content="glass cleaner, window cleaner, mirror cleaner, streak-free, ammonia-free, eco-friendly glass cleaner">
+    
+    <!-- Page Title -->
+    <title>Glass & Window Cleaners - Winzee</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/product-category.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Header Section (Same as index.html) -->
+    <header class="header" id="header">
+        <!-- Top Bar with Contact Info and Social Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                        <span><i class="fas fa-envelope"></i> support@winzee.com</span>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Winzee Logo">
+                            <span class="logo-text">Winzee</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        
+                        <!-- Products Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                                <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                                <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                                <li><a href="glass-cleaners.html" class="active">Glass Cleaners</a></li>
+                                <li><a href="all-purpose-cleaners.html">All-Purpose Cleaners</a></li>
+                                <li><a href="specialty-cleaners.html">Specialty Cleaners</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Right Side Icons -->
+                    <div class="nav-icons">
+                        <!-- Search Icon -->
+                        <button class="icon-btn search-btn" id="searchBtn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- User Account -->
+                        <a href="account.html" class="icon-btn" aria-label="User Account">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        
+                        <!-- Shopping Cart -->
+                        <a href="cart.html" class="icon-btn cart-btn" aria-label="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <form action="search.html" method="GET">
+                    <input type="search" name="q" placeholder="Search for products..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="close-search" id="closeSearch">&times;</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Category Hero Section -->
+    <section class="category-hero" style="background-image: url('images/glass-cleaner-hero.jpg');">
+        <div class="category-hero-overlay"></div>
+        <div class="container">
+            <div class="category-hero-content">
+                <h1 class="category-title">Glass & Window Cleaners</h1>
+                <p class="category-subtitle">Crystal Clear, Streak-Free Shine Every Time</p>
+                
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Glass Cleaners</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Category Features -->
+    <section class="category-features">
+        <div class="container">
+            <div class="features-row">
+                <div class="feature-box">
+                    <i class="fas fa-sparkles"></i>
+                    <h3>Streak-Free Formula</h3>
+                    <p>Advanced formula leaves no streaks or residue</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Ammonia-Free</h3>
+                    <p>Safe for tinted windows and all glass surfaces</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Friendly</h3>
+                    <p>Plant-based ingredients, biodegradable formula</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-wind"></i>
+                    <h3>Quick Drying</h3>
+                    <p>Fast-acting formula for effortless cleaning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="products-sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Filter Products</h3>
+                        
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <div class="price-range-slider">
+                                <input type="range" min="0" max="1000" value="0" id="minPrice">
+                                <input type="range" min="0" max="1000" value="1000" id="maxPrice">
+                                <div class="price-range-values">
+                                    <span>₹<span id="minPriceValue">0</span></span>
+                                    <span>₹<span id="maxPriceValue">1000</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Type Filter -->
+                        <div class="filter-group">
+                            <h4>Product Type</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="spray">
+                                    <span>Spray Bottles</span>
+                                    <span class="count">(8)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="refill">
+                                    <span>Refill Packs</span>
+                                    <span class="count">(5)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="wipes">
+                                    <span>Glass Wipes</span>
+                                    <span class="count">(3)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="concentrate">
+                                    <span>Concentrates</span>
+                                    <span class="count">(4)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Features Filter -->
+                        <div class="filter-group">
+                            <h4>Features</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="ammonia-free">
+                                    <span>Ammonia-Free</span>
+                                    <span class="count">(15)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="anti-fog">
+                                    <span>Anti-Fog</span>
+                                    <span class="count">(6)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="rain-repellent">
+                                    <span>Rain Repellent</span>
+                                    <span class="count">(4)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="antibacterial">
+                                    <span>Antibacterial</span>
+                                    <span class="count">(7)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Scent Filter -->
+                        <div class="filter-group">
+                            <h4>Scent</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="unscented">
+                                    <span>Unscented</span>
+                                    <span class="count">(8)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="fresh">
+                                    <span>Fresh Scent</span>
+                                    <span class="count">(6)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="citrus">
+                                    <span>Citrus</span>
+                                    <span class="count">(4)</span>
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="mint">
+                                    <span>Mint</span>
+                                    <span class="count">(2)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Clear Filters Button -->
+                        <button class="btn btn-outline btn-block" id="clearFilters">
+                            <i class="fas fa-times"></i> Clear All Filters
+                        </button>
+                    </div>
+                    
+                    <!-- Special Offers Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Special Offers</h3>
+                        <div class="offer-banner">
+                            <img src="images/glass-cleaner-offer.jpg" alt="Special Offer">
+                            <div class="offer-content">
+                                <h4>Buy 2 Get 1 Free</h4>
+                                <p>On all glass cleaners</p>
+                                <a href="#" class="btn btn-primary btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <!-- Products Header -->
+                    <div class="products-header">
+                        <div class="results-count">
+                            <p>Showing <strong>20</strong> products</p>
+                        </div>
+                        
+                        <div class="products-controls">
+                            <!-- View Toggle -->
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" aria-label="List view">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Sort Dropdown -->
+                            <div class="sort-dropdown">
+                                <select id="sortProducts" class="form-control">
+                                    <option value="featured">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Highest Rated</option>
+                                    <option value="newest">Newest First</option>
+                                    <option value="bestselling">Best Selling</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                        <!-- Products Grid -->
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product 1 -->
+                        <div class="product-card" data-product-id="1">
+                            <span class="product-badge">Best Seller</span>
+                            <div class="product-image">
+                                <img src="images/products/glass-cleaner-1.jpg" alt="Crystal Clear Glass Cleaner">
+                                <div class="product-overlay">
+                                    <button class="btn-icon add-to-cart" data-product-id="1">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button class="btn-icon quick-view" data-product-id="1">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn-icon add-to-wishlist" data-product-id="1">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Crystal Clear Glass Cleaner</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <p class="product-description">Streak-free formula for windows and mirrors</p>
+                                <div class="product-price">
+                                    <span class="current-price">₹199</span>
+                                    <span class="original-price">₹249</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="product-card" data-product-id="2">
+                            <span class="product-badge new">New</span>
+                            <div class="product-image">
+                                <img src="images/products/glass-cleaner-2.jpg" alt="Anti-Fog Glass Cleaner">
+                                <div class="product-overlay">
+                                    <button class="btn-icon add-to-cart" data-product-id="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button class="btn-icon quick-view" data-product-id="2">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn-icon add-to-wishlist" data-product-id="2">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Anti-Fog Glass Cleaner</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <p class="product-description">Prevents fogging for up to 30 days</p>
+                                <div class="product-price">
+                                    <span class="current-price">₹299</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="product-card" data-product-id="3">
+                            <div class="product-image">
+                                <img src="images/products/glass-cleaner-3.jpg" alt="Eco-Friendly Glass Wipes">
+                                <div class="product-overlay">
+                                    <button class="btn-icon add-to-cart" data-product-id="3">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button class="btn-icon quick-view" data-product-id="3">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn-icon add-to-wishlist" data-product-id="3">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Eco-Friendly Glass Wipes</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                                <p class="product-description">Biodegradable wipes, 50 count</p>
+                                <div class="product-price">
+                                    <span class="current-price">₹249</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 4 -->
+                        <div class="product-card" data-product-id="4">
+                            <span class="product-badge eco">Eco Choice</span>
+                            <div class="product-image">
+                                <img src="images/products/glass-cleaner-4.jpg" alt="Concentrated Glass Cleaner">
+                                <div class="product-overlay">
+                                    <button class="btn-icon add-to-cart" data-product-id="4">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                    <button class="btn-icon quick-view" data-product-id="4">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn-icon add-to-wishlist" data-product-id="4">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Concentrated Glass Cleaner</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                                <p class="product-description">Makes 10 bottles, reduces plastic waste</p>
+                                <div class="product-price">
+                                    <span class="current-price">₹399</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- More products would be dynamically loaded here -->
+                    </div>
+                    
+                    <!-- Load More Button -->
+                    <div class="load-more-wrapper">
+                        <button class="btn btn-outline" id="loadMoreProducts">
+                            <i class="fas fa-plus"></i> Load More Products
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Category Information Section -->
+    <section class="category-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>How to Use</h3>
+                    <ol>
+                        <li>Spray directly onto glass surface</li>
+                        <li>Wipe with a microfiber cloth</li>
+                        <li>For best results, use in a circular motion</li>
+                        <li>Buff dry for a streak-free shine</li>
+                    </ol>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Pro Tips</h3>
+                    <ul>
+                        <li>Clean glass on cloudy days to prevent streaking</li>
+                        <li>Use newspaper for an extra sparkle</li>
+                        <li>Clean from top to bottom</li>
+                        <li>Don't forget window tracks and frames</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <ul>
+                        <li>Keep out of reach of children</li>
+                        <li>Avoid contact with eyes</li>
+                        <li>Use in well-ventilated areas</li>
+                        <li>Store in a cool, dry place</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            
+            <div class="reviews-summary">
+                <div class="rating-overview">
+                    <div class="average-rating">
+                        <h3>4.6</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Based on 324 reviews</p>
+                    </div>
+                    
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span>5 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <span>20%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <span>10%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 3%;"></div>
+                            </div>
+                            <span>3%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1 star</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 2%;"></div>
+                            </div>
+                            <span>2%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="write-review">
+                    <h3>Share Your Experience</h3>
+                    <p>Have you used our glass cleaners? We'd love to hear from you!</p>
+                    <button class="btn btn-primary" id="writeReviewBtn">
+                        <i class="fas fa-pen"></i> Write a Review
+                    </button>
+                </div>
+            </div>
+            
+            <div class="reviews-list">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="images/avatars/user1.jpg" alt="Priya S.">
+                            <div>
+                                <h4>Priya S.</h4>
+                                <p>Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Best glass cleaner I've ever used!</h5>
+                        <p>No streaks, no residue, just crystal clear glass. The anti-fog formula is amazing for bathroom mirrors.</p>
+                        <div class="review-footer">
+                            <span class="review-date">2 days ago</span>
+                            <div class="review-helpful">
+                                <span>Helpful?</span>
+                                <button class="btn-text"><i class="fas fa-thumbs-up"></i> Yes (12)</button>
+                                <button class="btn-text"><i class="fas fa-thumbs-down"></i> No (0)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More reviews... -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Get Cleaning Tips & Exclusive Offers</h2>
+                    <p>Subscribe to our newsletter for the latest products and cleaning hacks</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.png" alt="Winzee">
+                    </div>
+                    <p>Making homes cleaner and healthier with eco-friendly cleaning solutions since 2020.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="blog.html">Cleaning Tips Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press & Media</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Product Categories -->
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                        <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                        <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                        <li><a href="glass-cleaners.html" class="active">Glass Cleaners</a></li>
+                        <li><a href="laundry-products.html">Laundry Products</a></li>
+                        <li><a href="all-products.html">View All Products</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping & Delivery</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="track-order.html">Track Your Order</a></li>
+                        <li><a href="wholesale.html">Wholesale Inquiries</a></li>
+                    </ul>
+                </div>
+                
+                                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Clean Street, Suite 100<br>San Francisco, CA 94105</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@winzee.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-6PM PST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>&copy; 2024 Winzee. All rights reserved.</p>
+                    </div>
+                    
+                    <!-- Footer Bottom Links -->
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-conditions.html">Terms & Conditions</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                    
+                    <!-- Payment Methods -->
+                    <div class="payment-methods">
+                        <img src="images/payment-visa.png" alt="Visa">
+                        <img src="images/payment-mastercard.png" alt="Mastercard">
+                        <img src="images/payment-amex.png" alt="American Express">
+                        <img src="images/payment-paypal.png" alt="PayPal">
+                        <img src="images/payment-apple-pay.png" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="liveChatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Live Chat">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification">1</span>
+        </button>
+    </div>
+    
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="quick-view-content">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Write Review Modal -->
+    <div class="modal" id="reviewModal">
+        <div class="modal-content modal-medium">
+            <div class="modal-header">
+                <h3>Write a Review</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="star-rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewTitle">Review Title</label>
+                        <input type="text" id="reviewTitle" class="form-control" placeholder="Summarize your experience" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Your Review</label>
+                        <textarea id="reviewText" class="form-control" rows="5" placeholder="Tell us about your experience with this product" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewName">Your Name</label>
+                        <input type="text" id="reviewName" class="form-control" placeholder="How should we display your name?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewEmail">Email (won't be published)</label>
+                        <input type="email" id="reviewEmail" class="form-control" placeholder="your@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="recommendProduct">
+                            <span>I would recommend this product to a friend</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/product-category.js"></script>
+    
+    <!-- Page-specific CSS -->
+    <style>
+        /* Category Hero */
+        .category-hero {
+            position: relative;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .category-hero-content {
+            position: relative;
+            z-index: 1;
+            color: var(--text-white);
+            text-align: center;
+        }
+        
+        .category-title {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .category-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-md);
+            opacity: 0.9;
+        }
+        
+        /* Category Features */
+        .category-features {
+            background: var(--bg-light);
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .features-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: var(--spacing-md);
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .feature-box i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .feature-box h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .feature-box p {
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        
+        /* Products Section */
+        .products-section {
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .products-wrapper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: var(--spacing-xl);
+        }
+        
+        /* Sidebar */
+        .products-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .sidebar-widget {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .widget-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .filter-group {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .filter-group h4 {
+            font-size: 1rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-xs) 0;
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        
+        .filter-checkbox:hover {
+            color: var(--primary-color);
+        }
+        
+        .filter-checkbox input[type="checkbox"] {
+            margin-right: var(--spacing-xs);
+        }
+        
+        .filter-checkbox .count {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+        
+        /* Price Range Slider */
+        .price-range-slider {
+            margin-top: var(--spacing-sm);
+        }
+        
+        .price-range-values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--spacing-sm);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        /* Products Header */
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .products-controls {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .view-toggle {
+            display: flex;
+            gap: var(--spacing-xs);
+        }
+        
+        .view-btn {
+            background: var(--bg-light);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .view-btn.active,
+        .view-btn:hover {
+            background: var(--primary-color);
+            color: var(--text-white);
+        }
+        
+        /* Product Card Variations */
+        .product-badge {
+            position: absolute;
+            top: var(--spacing-sm);
+            left: var(--spacing-sm);
+            background: var(--accent-color);
+            color: var(--text-white);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .product-badge.new {
+            background: var(--success-color);
+        }
+        
+        .product-badge.eco {
+            background: var(--primary-color);
+        }
+        
+        .product-description {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: var(--spacing-xs) 0;
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .current-price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .original-price {
+            font-size: 1rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+        
+        /* Load More */
+        .load-more-wrapper {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+        }
+        
+        /* Category Info Section */
+        .category-info-section {
+            background: var(--bg-light);
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .info-card {
+            background: var(--bg-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+        
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .info-card h3 {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .info-card ol,
+        .info-card ul {
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        /* Reviews Section */
+        .reviews-section {
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .reviews-summary {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background: var(--bg-light);
+            border-radius: var(--radius-lg);
+        }
+        
+        .rating-overview {
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+        
+        .average-rating {
+            text-align: center;
+        }
+        
+        .average-rating h3 {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .average-rating .stars {
+            color: #FFC107;
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .rating-breakdown {
+            flex: 1;
+        }
+        
+                .rating-bar {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .rating-bar .bar {
+            flex: 1;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+        
+        .rating-bar .fill {
+            height: 100%;
+            background: #FFC107;
+            transition: width var(--transition-base);
+        }
+        
+        .write-review {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+        }
+        
+        .reviews-list {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+        
+        .review-card {
+            background: var(--bg-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .reviewer-info {
+            display: flex;
+            gap: var(--spacing-sm);
+            align-items: center;
+        }
+        
+        .reviewer-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .reviewer-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        .reviewer-info p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+        
+        .review-rating {
+            color: #FFC107;
+        }
+        
+        .review-content h5 {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .review-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .review-date {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+        
+        .review-helpful {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+        
+        .btn-text {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+            padding: 4px 8px;
+            transition: color var(--transition-fast);
+        }
+        
+        .btn-text:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Star Rating Input */
+        .star-rating-input {
+            display: flex;
+            gap: var(--spacing-xs);
+            font-size: 1.5rem;
+        }
+        
+        .star-rating-input i {
+            cursor: pointer;
+            color: var(--text-light);
+            transition: color var(--transition-fast);
+        }
+        
+        .star-rating-input i:hover,
+        .star-rating-input i.active {
+            color: #FFC107;
+        }
+        
+        /* Special Offer Banner */
+        .offer-banner {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .offer-banner img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .offer-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--text-white);
+            padding: var(--spacing-md);
+            text-align: center;
+        }
+        
+        .offer-content h4 {
+            color: var(--text-white);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .offer-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .products-wrapper {
+                grid-template-columns: 250px 1fr;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .category-title {
+                font-size: 2.5rem;
+            }
+            
+            .products-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-sidebar {
+                position: static;
+                order: -1;
+                margin-bottom: var(--spacing-xl);
+            }
+            
+            .rating-overview {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .reviews-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .category-title {
+                font-size: 2rem;
+            }
+            
+            .category-subtitle {
+                font-size: 1rem;
+            }
+            
+            .features-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-md);
+            }
+            
+            .products-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .review-header {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .review-footer {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar-widget {
+                padding: var(--spacing-md);
+            }
+            
+            .filter-checkbox {
+                font-size: 0.875rem;
+            }
+        }
+        
+        /* List View Styles */
+        .products-grid.list-view {
+            display: block;
+        }
+        
+        .products-grid.list-view .product-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+            padding: var(--spacing-md);
+        }
+        
+        .products-grid.list-view .product-image {
+            height: 150px;
+        }
+        
+        .products-grid.list-view .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .products-grid.list-view .product-description {
+            display: block;
+            margin: var(--spacing-sm) 0;
+        }
+        
+        @media (max-width: 768px) {
+            .products-grid.list-view .product-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Page-specific JavaScript -->
+    <script>
+        // Product category specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Price range slider
+            const minPrice = document.getElementById('minPrice');
+            const maxPrice = document.getElementById('maxPrice');
+            const minPriceValue = document.getElementById('minPriceValue');
+            const maxPriceValue = document.getElementById('maxPriceValue');
+            
+            minPrice.addEventListener('input', function() {
+                minPriceValue.textContent = this.value;
+                if (parseInt(this.value) > parseInt(maxPrice.value)) {
+                    maxPrice.value = this.value;
+                    maxPriceValue.textContent = this.value;
+                }
+            });
+            
+            maxPrice.addEventListener('input', function() {
+                maxPriceValue.textContent = this.value;
+                if (parseInt(this.value) < parseInt(minPrice.value)) {
+                    minPrice.value = this.value;
+                    minPriceValue.textContent = this.value;
+                }
+            });
+            
+            // View toggle
+            const viewBtns = document.querySelectorAll('.view-btn');
+            const productsGrid = document.getElementById('productsGrid');
+            
+            viewBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    viewBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    if (this.dataset.view === 'list') {
+                        productsGrid.classList.add('list-view');
+                    } else {
+                        productsGrid.classList.remove('list-view');
+                    }
+                });
+            });
+            
+            // Filter functionality
+            const filterCheckboxes = document.querySelectorAll('.filter-checkbox input');
+            const clearFiltersBtn = document.getElementById('clearFilters');
+            
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', applyFilters);
+            });
+            
+            clearFiltersBtn.addEventListener('click', function() {
+                filterCheckboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                minPrice.value = 0;
+                maxPrice.value = 1000;
+                minPriceValue.textContent = '0';
+                maxPriceValue.textContent = '1000';
+                applyFilters();
+            });
+            
+            function applyFilters() {
+                // This would typically make an AJAX request to filter products
+                console.log('Applying filters...');
+            }
+            
+            // Load more products
+            const loadMoreBtn = document.getElementById('loadMoreProducts');
+            
+            loadMoreBtn.addEventListener('click', function() {
+                // Simulate loading more products
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                
+                setTimeout(() => {
+                    // Add more product cards here
+                    this.innerHTML = '<i class="fas fa-plus"></i> Load More Products';
+                }, 1500);
+            });
+            
+            // Star rating input
+            const starInputs = document.querySelectorAll('.star-rating-input i');
+            let selectedRating = 0;
+            
+            starInputs.forEach((star, index) => {
+                star.addEventListener('mouseenter', function() {
+                    starInputs.forEach((s, i) => {
+                        if (i <= index) {
+                            s.classList.remove('far');
+                            s.classList.add('fas');
+                        } else {
+                            s.classList.remove('fas');
+                            s.classList.add('far');
+                        }
+                    });
+                });
+                
+                star.addEventListener('click', function() {
+                    selectedRating = index + 1;
+                    starInputs.forEach(s => s.classList.add('active'));
+                });
+            });
+            
+            // Write review button
+            const writeReviewBtn = document.getElementById('writeReviewBtn');
+            const reviewModal = document.getElementById('reviewModal');
+            
+            writeReviewBtn.addEventListener('click', function() {
+                reviewModal.classList.add('active');
+                document.body.classList.add('modal-open');
+            });
+            
+            // Review form submission
+            const reviewForm = document.getElementById('reviewForm');
+            
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    // Close modal and show success message
+                    reviewModal.classList.remove('active');
+                    document.body.classList.remove('modal-open');
+                    
+                    // Show notification
+                    if (window.showNotification) {
+                        window.showNotification('Thank you for your review!', 'success');
+                    }
+                    
+                    // Reset form
+                    this.reset();
+                    submitBtn.innerHTML = 'Submit Review';
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
+            
