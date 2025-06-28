@@ -1,1 +1,525 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winzee - Premium Household Cleaners for a Spotless Home. Eco-friendly, effective cleaning solutions for every room.">
+    <meta name="keywords" content="household cleaners, eco-friendly cleaning, Winzee, cleaning products, home cleaning">
+    <meta name="author" content="Winzee">
+    
+    <!-- Page Title -->
+    <title>Winzee - Premium Household Cleaners | Clean Home, Happy Life</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <!-- Top Bar with Contact Info and Social Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                        <span><i class="fas fa-envelope"></i> support@winzee.com</span>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Winzee Logo">
+                            <span class="logo-text">Winzee</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        
+                        <!-- Products Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                                <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                                <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                                <li><a href="glass-cleaners.html">Glass Cleaners</a></li>
+                                <li><a href="all-purpose-cleaners.html">All-Purpose Cleaners</a></li>
+                                <li><a href="specialty-cleaners.html">Specialty Cleaners</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Right Side Icons -->
+                    <div class="nav-icons">
+                        <!-- Search Icon -->
+                        <button class="icon-btn search-btn" id="searchBtn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- User Account -->
+                        <a href="account.html" class="icon-btn" aria-label="User Account">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        
+                        <!-- Shopping Cart -->
+                        <a href="cart.html" class="icon-btn cart-btn" aria-label="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <form action="search.html" method="GET">
+                    <input type="search" name="q" placeholder="Search for products..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="close-search" id="closeSearch">&times;</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="hero-title">Clean Home, Happy Life</h1>
+                    <p class="hero-subtitle">Discover our range of eco-friendly household cleaners that make your home sparkle</p>
+                    <div class="hero-buttons">
+                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-1.jpg" alt="Winzee Cleaning Products">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Features -->
+        <div class="hero-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>Eco-Friendly</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Safe & Non-Toxic</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Quality Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Product Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find the perfect cleaning solution for every room in your home</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Kitchen Cleaners -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/kitchen-cleaners.jpg" alt="Kitchen Cleaners">
+                        <div class="category-overlay">
+                            <a href="kitchen-cleaners.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Kitchen Cleaners</h3>
+                        <p>Degreasers, dish soaps, and surface cleaners</p>
+                    </div>
+                </div>
+                
+                <!-- Bathroom Cleaners -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/bathroom-cleaners.jpg" alt="Bathroom Cleaners">
+                        <div class="category-overlay">
+                            <a href="bathroom-cleaners.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Bathroom Cleaners</h3>
+                        <p>Toilet cleaners, tile cleaners, and mold removers</p>
+                    </div>
+                </div>
+                
+                <!-- Floor Cleaners -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/floor-cleaners.jpg" alt="Floor Cleaners">
+                        <div class="category-overlay">
+                            <a href="floor-cleaners.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Floor Cleaners</h3>
+                        <p>Wood, tile, carpet, and laminate cleaners</p>
+                    </div>
+                </div>
+                
+                <!-- Glass Cleaners -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/glass-cleaners.jpg" alt="Glass Cleaners">
+                        <div class="category-overlay">
+                            <a href="glass-cleaners.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Glass & Window Cleaners</h3>
+                        <p>Streak-free window and mirror cleaners</p>
+                    </div>
+                </div>
+                
+                <!-- Laundry Products -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/laundry-products.jpg" alt="Laundry Products">
+                        <div class="category-overlay">
+                            <a href="laundry-products.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Laundry Products</h3>
+                        <p>Detergents, stain removers, and fabric softeners</p>
+                    </div>
+                </div>
+                
+                <!-- All-Purpose Cleaners -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/all-purpose-cleaners.jpg" alt="All-Purpose Cleaners">
+                        <div class="category-overlay">
+                            <a href="all-purpose-cleaners.html" class="btn btn-white">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>All-Purpose Cleaners</h3>
+                        <p>Versatile cleaners for multiple surfaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Our best-selling cleaning solutions</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Winzee Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Winzee?</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <!-- Plant-Based Ingredients -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Plant-Based Ingredients</h3>
+                    <p>Our products are made with naturally derived, biodegradable ingredients</p>
+                </div>
+                
+                <!-- Cruelty-Free -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Cruelty-Free</h3>
+                    <p>Never tested on animals and certified by leading animal welfare organizations</p>
+                </div>
+                
+                <!-- Safe for Family -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Family Safe</h3>
+                    <p>Non-toxic formulas safe for use around children and pets</p>
+                </div>
+                
+                <!-- Effective Cleaning -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>Powerful Cleaning</h3>
+                    <p>Professional-grade cleaning power without harsh chemicals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial cards will be here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Clean & Green</h2>
+                    <p>Subscribe to get exclusive offers, cleaning tips, and new product updates</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.png" alt="Winzee">
+                    </div>
+                    <p>Making homes cleaner and healthier with eco-friendly cleaning solutions since 2020.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="blog.html">Cleaning Tips Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press & Media</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Product Categories -->
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="kitchen-cleaners.html">Kitchen Cleaners</a></li>
+                        <li><a href="bathroom-cleaners.html">Bathroom Cleaners</a></li>
+                        <li><a href="floor-cleaners.html">Floor Cleaners</a></li>
+                        <li><a href="glass-cleaners.html">Glass Cleaners</a></li>
+                        <li><a href="laundry-products.html">Laundry Products</a></li>
+                        <li><a href="all-products.html">View All Products</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping & Delivery</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="track-order.html">Track Your Order</a></li>
+                        <li><a href="wholesale.html">Wholesale Inquiries</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Clean Street, Suite 100<br>San Francisco, CA 94105</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@winzee.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-6PM PST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>&copy; 2024 Winzee. All rights reserved.</p>
+                    </div>
+                    
+                    <!-- Footer Bottom Links -->
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-conditions.html">Terms & Conditions</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                    
+                    <!-- Payment Methods -->
+                    <div class="payment-methods">
+                        <img src="images/payment-visa.png" alt="Visa">
+                        <img src="images/payment-mastercard.png" alt="Mastercard">
+                        <img src="images/payment-amex.png" alt="American Express">
+                        <img src="images/payment-paypal.png" alt="PayPal">
+                        <img src="images/payment-apple-pay.png" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="liveChatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Live Chat">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification">1</span>
+        </button>
+        <!-- Chat box will be dynamically added via JavaScript -->
+    </div>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-primary" id="acceptCookies">Accept</button>
+                <a href="cookie-policy.html" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/cart.js"></script>
+    
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Winzee",
+        "description": "Premium eco-friendly household cleaning products",
+        "url": "https://www.winzee.com",
+        "logo": "https://www.winzee.com/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/winzee",
+            "https://www.twitter.com/winzee",
+            "https://www.instagram.com/winzee"
+        ]
+    }
+    </script>
+</body>
+</html>
